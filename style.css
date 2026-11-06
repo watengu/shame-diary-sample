@@ -1,0 +1,365 @@
+/* サンプル写メ日記サイト 共通スタイル */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fdf3f6;
+  color: #333;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  border-left: 1px solid #f3d9e2;
+  border-right: 1px solid #f3d9e2;
+}
+
+/* サンプル明示バナー */
+.sample-banner {
+  background: #c2185b;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 8px;
+  letter-spacing: 0.02em;
+}
+
+header.site-head {
+  background: linear-gradient(180deg, #fff0f5, #ffffff);
+  border-bottom: 2px solid #f8bbd0;
+  padding: 14px 12px 10px;
+  text-align: center;
+}
+header.site-head .site-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c2185b;
+  margin: 0;
+}
+header.site-head .site-sub {
+  font-size: 11px;
+  color: #999;
+  margin: 2px 0 0;
+}
+
+nav.top-nav {
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px;
+  background: #fff;
+  border-bottom: 1px solid #f3d9e2;
+}
+nav.top-nav a {
+  flex: 1;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 0;
+  border: 1px solid #f48fb1;
+  border-radius: 16px;
+  color: #c2185b;
+  text-decoration: none;
+  background: #fff5f8;
+}
+nav.top-nav a.current {
+  background: #c2185b;
+  color: #fff;
+}
+
+/* ペルソナカード（一覧トップ） */
+.persona-card {
+  margin: 12px 10px;
+  border: 1px solid #f3d9e2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+.persona-card a { color: inherit; text-decoration: none; display: block; }
+.persona-card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 25%;
+}
+.persona-card .card-body { padding: 10px 12px 12px; }
+.persona-card .card-name { font-size: 18px; font-weight: bold; margin: 0 0 2px; }
+.persona-card .card-name .age { font-size: 13px; color: #888; font-weight: normal; }
+.persona-card .card-catch { margin: 0 0 6px; color: #555; font-size: 14px; }
+.persona-card .card-tags { margin: 0; font-size: 11px; color: #c2185b; }
+.persona-card .card-link {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+  background: #f8bbd0;
+  color: #880e4f;
+  border-radius: 16px;
+  padding: 6px 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* プロフィール欄 */
+.profile {
+  margin: 12px 10px;
+  border: 1px solid #f3d9e2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.profile img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 25%;
+}
+.profile .prof-body { padding: 10px 12px 12px; }
+.profile .prof-name { font-size: 19px; font-weight: bold; margin: 0 0 4px; }
+.profile table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 6px 0;
+}
+.profile table th {
+  text-align: left;
+  color: #c2185b;
+  font-weight: normal;
+  width: 34%;
+  padding: 3px 4px;
+  border-bottom: 1px dotted #f3d9e2;
+  vertical-align: top;
+}
+.profile table td {
+  padding: 3px 4px;
+  border-bottom: 1px dotted #f3d9e2;
+}
+.profile .prof-note { font-size: 11px; color: #999; margin: 4px 0 0; }
+
+/* 日記エントリー */
+.entry {
+  margin: 14px 10px;
+  border-top: 3px solid #f8bbd0;
+  padding-top: 8px;
+}
+.entry .entry-date {
+  font-size: 12px;
+  color: #fff;
+  background: #ec407a;
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+.entry h2 {
+  font-size: 17px;
+  margin: 4px 0 6px;
+  color: #333;
+  border-bottom: 1px solid #f3d9e2;
+  padding-bottom: 4px;
+}
+.entry .entry-body { white-space: normal; }
+.entry .entry-body p { margin: 0 0 10px; }
+.entry img.diary-photo {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  margin: 4px 0 10px;
+}
+.entry .photo-caption { font-size: 11px; color: #999; margin: -6px 0 10px; }
+
+.section-title {
+  margin: 16px 10px 0;
+  font-size: 15px;
+  color: #c2185b;
+  border-left: 4px solid #ec407a;
+  padding-left: 8px;
+}
+
+footer.site-foot {
+  margin-top: 24px;
+  border-top: 2px solid #f8bbd0;
+  padding: 12px;
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+  background: #fff5f8;
+}
+footer.site-foot a { color: #c2185b; }
+
+/* 玄関：状況別インデックス */
+.lead {
+  margin: 12px 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+.situation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 10px;
+}
+.situation {
+  border: 1px solid #f3d9e2;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fffafa;
+}
+.situation .sit-name {
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  color: #c2185b;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+.situation .sit-desc { display: block; font-size: 11px; color: #888; margin-bottom: 4px; }
+.situation .sit-links { display: block; font-size: 12px; }
+.situation .sit-links a { color: #555; }
+
+/* 目次（章立て） */
+.chapter-list { margin: 10px; padding: 0; list-style: none; }
+.chapter-list li {
+  border: 1px solid #f3d9e2;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #fffafa;
+}
+.chapter-list a {
+  display: block;
+  padding: 10px 12px;
+  color: inherit;
+  text-decoration: none;
+}
+.chapter-list .ch-title { font-weight: bold; color: #c2185b; font-size: 15px; }
+.chapter-list .ch-desc { display: block; font-size: 12px; color: #777; margin-top: 2px; }
+
+/* 章ページ共通 */
+.chapter-body { padding: 4px 12px 8px; font-size: 14px; }
+.chapter-body h2 {
+  font-size: 16px;
+  color: #c2185b;
+  border-left: 4px solid #ec407a;
+  padding-left: 8px;
+  margin: 20px 0 8px;
+}
+.chapter-body h3 { font-size: 14px; margin: 14px 0 4px; color: #333; }
+.chapter-body p { margin: 0 0 10px; }
+.chapter-body ul, .chapter-body ol { margin: 0 0 10px; padding-left: 20px; }
+.chapter-body li { margin-bottom: 3px; }
+.chapter-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  margin: 6px 0 14px;
+}
+.chapter-body table th, .chapter-body table td {
+  border: 1px solid #f3d9e2;
+  padding: 5px 6px;
+  text-align: left;
+  vertical-align: top;
+}
+.chapter-body table th { background: #fff0f5; color: #880e4f; font-weight: bold; }
+.note-box {
+  background: #fff5f8;
+  border: 1px solid #f8bbd0;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 12.5px;
+  margin: 10px 0;
+}
+.checklist { list-style: none; padding-left: 2px; }
+.checklist li { padding-left: 20px; position: relative; margin-bottom: 5px; }
+.checklist li::before {
+  content: "□";
+  position: absolute;
+  left: 0;
+  color: #c2185b;
+}
+
+/* 型編のテンプレ */
+.theme-block {
+  margin: 14px 10px;
+  border: 1px solid #f3d9e2;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+}
+.theme-block h2 {
+  font-size: 16px;
+  color: #c2185b;
+  margin: 0 0 4px;
+}
+.theme-block .theme-idea { font-size: 12.5px; color: #666; margin: 0 0 10px; }
+.tpl {
+  border-top: 1px dotted #f3d9e2;
+  padding: 8px 0 4px;
+}
+.tpl .tpl-name { font-size: 12px; color: #ec407a; font-weight: bold; }
+.tpl .tpl-title { font-weight: bold; margin: 2px 0 4px; }
+.tpl .tpl-body { font-size: 13.5px; color: #444; margin: 0 0 8px; }
+.tpl .tpl-body p { margin: 0 0 6px; }
+
+/* 玄関：キャッチ */
+.catch {
+  font-size: 22px;
+  font-weight: bold;
+  color: #c2185b;
+  text-align: center;
+  margin: 18px 12px 4px;
+  line-height: 1.4;
+}
+.catch-sub {
+  text-align: center;
+  font-size: 12.5px;
+  color: #777;
+  margin: 0 12px 6px;
+}
+
+/* 玄関：使い方3ステップ */
+.steps { margin: 10px; display: grid; gap: 8px; }
+.step {
+  border: 1px solid #f3d9e2;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #fffafa;
+}
+.step .step-no {
+  font-size: 11px;
+  font-weight: bold;
+  color: #ec407a;
+  letter-spacing: 0.08em;
+}
+.step .step-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: #c2185b;
+  margin: 0 0 2px;
+}
+.step p { margin: 0; font-size: 12.5px; color: #666; }
+
+/* 玄関：種類別インデックス */
+.kind-grid { display: grid; gap: 10px; margin: 10px; }
+.kind {
+  border: 1px solid #f3d9e2;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+}
+.kind .kind-name { font-size: 17px; font-weight: bold; color: #c2185b; margin: 0 0 2px; }
+.kind .kind-desc { font-size: 12px; color: #888; margin: 0 0 4px; }
+.kind ul.topics { list-style: none; margin: 4px 0 0; padding: 0; }
+.kind ul.topics li {
+  padding: 4px 0;
+  border-top: 1px dotted #f3d9e2;
+  font-size: 13px;
+}
+.kind ul.topics li:first-child { border-top: none; }
+.kind ul.topics .t-name { font-weight: bold; color: #333; text-decoration: none; }
+.kind ul.topics .t-note { display: block; font-size: 11px; color: #999; }
+.kind ul.topics .t-links { display: block; font-size: 12px; }
+.kind ul.topics .t-links a { color: #555; }
