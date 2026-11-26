@@ -363,3 +363,45 @@ footer.site-foot a { color: #c2185b; }
 .kind ul.topics .t-note { display: block; font-size: 11px; color: #999; }
 .kind ul.topics .t-links { display: block; font-size: 12px; }
 .kind ul.topics .t-links a { color: #555; }
+
+/* PR見本用（プレビュー追加分） */
+.pr-badge {
+  display: inline-block;
+  background: #c2185b;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.pr-frame {
+  border: 2px solid #c2185b;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 14px 10px;
+  background: #fff5f8;
+}
+.pr-frame .pr-frame-title { font-weight: bold; color: #c2185b; margin: 0 0 6px; font-size: 15px; }
+.pr-note { font-size: 12px; color: #666; margin: 6px 0; }
+.item-list { margin: 6px 0 6px 18px; padding: 0; }
+.item-list li { margin-bottom: 4px; font-size: 14px; }
+.recreate-list { list-style: none; margin: 8px 0 0; padding: 0; }
+.recreate-list li {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.recreate-list .fake-link { color: #999; text-decoration: line-through; }
+.guide-box {
+  border: 1px dashed #999;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 14px 10px;
+  background: #fafafa;
+}
+.guide-box .guide-title { font-weight: bold; margin: 0 0 6px; font-size: 14px; }
